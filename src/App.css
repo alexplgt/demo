@@ -1,0 +1,25 @@
+.background-land {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: beige;
+}
+
+.app-Wrapper{
+  background-color: darkkhaki;
+  display: grid;
+  width: 80%;
+  justify-content: center;
+  grid-template-areas:
+'h h'
+'n c' ;
+  grid-template-rows: 150px auto;
+  grid-template-columns: 2fr 8fr;
+  grid-gap: 10px;
+}
+
+.app-Wrapper-Content{
+    grid-area: c;
+}
+
+

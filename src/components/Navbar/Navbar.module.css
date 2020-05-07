@@ -1,0 +1,30 @@
+.nav{
+    grid-area: n;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+
+.item a{
+text-decoration: none;
+}
+
+
+.nav div a:hover{
+    text-shadow: 3px 3px 3px white;
+}
+
+.item{
+    font-family: "Comic Sans MS";
+    font-size: 24px;
+    font-weight: bold;
+    padding:30px;
+    padding-left: 15%;
+}
+
+
+.activeLink{
+color: gold;
+}
