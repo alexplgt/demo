@@ -1,0 +1,33 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="*.module.css" type="CSS" />
+      <mapping pattern="Music.module.css" type="CSS" />
+      <mapping pattern="Dialogs.module.css" type="CSS" />
+      <mapping pattern="FriendsBar.module.css" type="CSS" />
+      <mapping pattern="Users.module.css" type="CSS" />
+      <mapping pattern="FriendsItem.module.css" type="CSS" />
+      <mapping pattern="Pagination.module.css" type="CSS" />
+      <mapping pattern="Friends.module.css" type="CSS" />
+      <mapping pattern="Header.module.css" type="CSS" />
+      <mapping pattern="Profile.module.css" type="CSS" />
+      <mapping pattern="Post.module.css" type="CSS" />
+      <mapping pattern="Navbar.module.css" type="CSS" />
+      <mapping pattern="FormsControl.module.css" type="CSS" />
+      <mapping pattern="MyPosts.module.css" type="CSS" />
+      <mapping pattern="ProfileInfo.module.css" type="CSS" />
+      <mapping pattern="*.js.flow" type="Flow" />
+      <mapping pattern="*.js.flow" type="Flow" />
+      <mapping pattern="*.module.css" type="PLAIN_TEXT" />
+      <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="log" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="log" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="dockerfile" approved="true" type="textmate" />
+      <removed_mapping ext="makefile" approved="true" type="textmate" />
+      <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="snakefile" approved="true" type="textmate" />
+    </extensionMap>
+  </component>
+</application>
