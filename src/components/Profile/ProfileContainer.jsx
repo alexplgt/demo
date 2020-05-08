@@ -1,6 +1,6 @@
 import React from "react";
 import {connect} from "react-redux";
-import {getUserProfileThunk, getUserStatusThunk, setUserStatusThunk} from "../../Redux/profileReducer";
+import {getUserProfileThunk, getUserStatusThunk, setUserStatusThunk, uploadPhoto} from "../../Redux/profileReducer";
 import {withRouter} from "react-router-dom";
 import {compose} from "redux";
 import {Profile} from "./Profile";
@@ -30,7 +30,7 @@ class ProfileContainer extends React.Component {
     render() {
         return (
             <div>
-                <Profile {...this.props}/>
+                <Profile {...this.props} isOwner={!this.props.match.params.userId}/>
             </div>
         )
     }
@@ -42,7 +42,7 @@ let mapStateToProps = (state) => {
         status: state.profilePage.status,
         isAuth: state.auth.isAuth,
         authorizedId: state.auth.id,
-        isOwner: this.props.match.params.userId
+
     }
 };
 

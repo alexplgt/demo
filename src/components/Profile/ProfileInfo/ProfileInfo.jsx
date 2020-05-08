@@ -5,23 +5,21 @@ import {StatusWithHooks} from "./StatusWithHooks";
 import defaultAvatar from "../../../Assets/Images/defaultAvatar.jpg";
 
 
-const ProfileInfo = React.memo(props => {
+const ProfileInfo = props => {
 
     const setPhoto = (e) => {
-        if (e.target.length) {
-            props.uploadPhoto(e.target[0])
+        if (e.target.files.length) {
+            props.uploadPhoto(e.target.files[0]);
         }
     };
 
     return ((!props.profile) ? <Preloader/> :
             <div className={s.profile}>
                 <div className={s.profileImgContainer}>
-                    <img className={s.profileImg}
-                         src='https://avatars.mds.yandex.net/get-pdb/1366634/4fe35daf-c4a8-4400-94b2-057b9d8c46a0/s1200'/>
+                    <img className={s.profileImg} src={props.profile.photos.large || props.profile.photos.small || defaultAvatar }/>
+                    {props.isOwner && <input className={s.imageSetButton} type={'file'} onChange={setPhoto}/>}
                 </div>
                 <div>
-                    <img src={props.profile.photos.large || props.profile.photos.small || defaultAvatar }/>
-                    {props.isOwner && <input type={'file'} onChange={setPhoto}/>}
                         <div>
                         {props.profile.fullName}
                     </div>
@@ -35,6 +33,6 @@ const ProfileInfo = React.memo(props => {
                 </div>
             </div>
     )
-});
+};
 
 export default ProfileInfo;

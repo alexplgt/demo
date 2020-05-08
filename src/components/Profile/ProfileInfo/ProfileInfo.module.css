@@ -1,11 +1,16 @@
-.profileImgContainer{
-width: 90%;
-height: 300px;
+.profileImgContainer {
+    display: flex;
+    flex-direction: column;
 }
 
-.profileImg{
-    height: 300px;
-    width: 100%;
+.profileImg {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+
+.imageSetButton{
+
 }
 
 

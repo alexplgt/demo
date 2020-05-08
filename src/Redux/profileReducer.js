@@ -36,15 +36,15 @@ export const getUserStatusThunk = userId => async (dispatch) => {
 export const uploadPhoto = photo => async (dispatch) => {
 
     let response = await userApi.uploadPhoto(photo);
-    if (response.resultCode === 0){
+    if (response.data.resultCode === 0){
     dispatch(setPhoto(response.data.data.photos))}
 };
 
 export const setUserStatusThunk = (status) => {
     return (dispatch) => {
         userApi.setUserStatus(status).then(response => {
-            if (response.resultCode === 0) {
-                dispatch(setUserStatus(response.data))
+            if (response.data.resultCode === 0) {
+                dispatch(setUserStatus(status))
             }
         })
     }

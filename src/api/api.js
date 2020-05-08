@@ -46,7 +46,7 @@ export const userApi = {
     },
     uploadPhoto(photo){
         const formData = new FormData();
-        formData.append('image', photo, );
-        return instance.post('...url...', formData, {})
+        formData.append('image', photo );
+        return instance.put('profile/photo', formData, {headers: { 'content-type': 'multipart/form-data' }})
     }
-}
+};
