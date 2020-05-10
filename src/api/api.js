@@ -48,5 +48,9 @@ export const userApi = {
         const formData = new FormData();
         formData.append('image', photo );
         return instance.put('profile/photo', formData, {headers: { 'content-type': 'multipart/form-data' }})
-    }
+    },
+    saveProfileData(formData){
+        debugger
+        return instance.put(`profile`, {formData})
+    },
 };

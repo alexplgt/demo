@@ -1,6 +1,12 @@
 import React from "react";
 import {connect} from "react-redux";
-import {getUserProfileThunk, getUserStatusThunk, setUserStatusThunk, uploadPhoto} from "../../Redux/profileReducer";
+import {
+    getUserProfileThunk,
+    getUserStatusThunk,
+    saveProfileData,
+    setUserStatusThunk,
+    uploadPhoto
+} from "../../Redux/profileReducer";
 import {withRouter} from "react-router-dom";
 import {compose} from "redux";
 import {Profile} from "./Profile";
@@ -47,7 +53,7 @@ let mapStateToProps = (state) => {
 };
 
 export default compose(
-    connect(mapStateToProps, {getUserProfileThunk, getUserStatusThunk, setUserStatusThunk, uploadPhoto}),
+    connect(mapStateToProps, {getUserProfileThunk, getUserStatusThunk, setUserStatusThunk, uploadPhoto, saveProfileData}),
     withRouter
 )(ProfileContainer)
 

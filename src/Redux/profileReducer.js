@@ -40,6 +40,13 @@ export const uploadPhoto = photo => async (dispatch) => {
     dispatch(setPhoto(response.data.data.photos))}
 };
 
+export const saveProfileData = formData => async (dispatch, getState) => {
+    let userId = getState().auth.id;
+    let response = await userApi.saveProfileData(formData);
+    if (response.data.resultCode === 0){
+        dispatch(setUserProfile(userId))}
+};
+
 export const setUserStatusThunk = (status) => {
     return (dispatch) => {
         userApi.setUserStatus(status).then(response => {

@@ -8,7 +8,7 @@ import {Input} from "../../../Common/FormsControl/FormsControl";
 
 export const MyPosts = (props) => {
 
-    let post = props.profilePage.postArray.map(post => <Post message={post.message} likesCount={post.likesCount}/>).reverse();
+    let post = props.profilePage.postArray.map(post => <Post key={post.id} message={post.message} likesCount={post.likesCount}/>).reverse();
 
 
     return (
