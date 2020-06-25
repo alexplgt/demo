@@ -1,0 +1,11 @@
+.avalogo{
+    width:50px;
+}
+
+.friendsBarContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}

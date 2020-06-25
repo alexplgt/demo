@@ -1,0 +1,19 @@
+.header{
+    grid-area: h;
+    background-color: olive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header img{
+    height: 100%;
+}
+
+.text{
+    font-family: "Comic Sans MS";
+    font-size: 40px;
+    align-self: center;
+    font-style: italic;
+
+}

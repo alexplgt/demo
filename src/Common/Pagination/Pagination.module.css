@@ -1,0 +1,10 @@
+.activePageNumber{
+    font-weight: bold;
+}
+
+.pagesNumbers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}

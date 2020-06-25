@@ -1,0 +1,25 @@
+.profileImgContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileImg {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+
+.imageSetButton{
+
+}
+
+.contacts{
+    padding-left: 20px;
+}
+
+.status{
+    padding-top: 20px;
+}
+
+
+
